@@ -86,9 +86,11 @@ const page = () => {
             transition={{ delay: 0.8, duration: 0.3 }}
             className="flex space-x-12 items-center xl:items-center flex-col-reverse md:flex-row-reverse"
           >
-            <Button className="text-lg md:text-xl p-6 md:p-8 hover:bg-gray-300 bg-white text-black font-extrabold">
-              Contect Me
-            </Button>
+            <Link href="mailto:sushil.dev.in@gmail.com" target="_blank">
+              <Button className="text-lg md:text-xl p-6 md:p-8 hover:bg-gray-300 bg-white text-black font-extrabold">
+                Contect Me
+              </Button>
+            </Link>
             <p className="md:w-[500px] mb-3 md:mb-0 px-8 text-wrap text-left font-roboto ">
               Hello, I&apos;m Sushil Kumar, a full-stack developer from India,
               proficient in MERN and Next.js, with expertise in crafting
