@@ -3,37 +3,80 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Separator } from "./ui/separator";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const stack = [
   {
-    name: "Next.js",
-    icon: "/images/profile.jpg",
-    type: "Fullstack framework",
+    name: "React.js",
+    icon: "/icons/react.svg",
+    type: "User Interface Library",
+    link: "https://react.dev/",
+  },
+  {
+    name: "Node.js",
+    icon: "/icons/nodejs.svg",
+    type: "Javascript runtime",
+    link: "https://nodejs.org/en",
   },
   {
     name: "Next.js",
-    icon: "/images/profile.jpg",
+    icon: "/icons/nextjs.svg",
     type: "Fullstack framework",
+    link: "https://nextjs.org/",
   },
   {
-    name: "Next.js",
-    icon: "/images/profile.jpg",
-    type: "Fullstack framework",
+    name: "Typescript",
+    icon: "/icons/typescript.svg",
+    type: "Type annotations for JavaScript",
+    link: "https://www.typescriptlang.org/",
   },
   {
-    name: "Next.js",
-    icon: "/images/profile.jpg",
-    type: "Fullstack framework",
+    name: "MongooDB",
+    icon: "/icons/mongodb.svg",
+    type: "NoSQL database",
+    link: "https://www.mongodb.com/",
   },
   {
-    name: "Next.js",
-    icon: "/images/profile.jpg",
-    type: "Fullstack framework",
+    name: "PostgreSQL",
+    icon: "/icons/postgresql.svg",
+    type: "SQL database",
+    link: "https://www.postgresql.org/",
   },
   {
-    name: "Next.js",
-    icon: "/images/profile.jpg",
+    name: "Redux",
+    icon: "/icons/redux.svg",
     type: "Fullstack framework",
+    link: "https://redux.js.org/",
+  },
+  {
+    name: "Redis",
+    icon: "/icons/Redis.png",
+    type: "database and cache",
+    link: "https://redis.io/",
+  },
+  {
+    name: "Socket.io",
+    icon: "/icons/socket.svg",
+    type: "Real-time communication",
+    link: "https://socket.io/",
+  },
+  {
+    name: "NPM",
+    icon: "/icons/npm.svg",
+    type: "Package manager",
+    link: "https://www.npmjs.com/",
+  },
+  {
+    name: "Cloudflare Worker",
+    icon: "/icons/cloudflare.svg",
+    type: "Serverless framework",
+    link: "https://www.cloudflare.com/",
+  },
+  {
+    name: "Git",
+    icon: "/icons/git.svg",
+    type: "Version control system",
+    link: "https://git-scm.com/",
   },
 ];
 
@@ -68,52 +111,49 @@ const MyStack = () => {
       </motion.div>
       <div className="w-full grid gap-4 grid-cols-1 md:px-20 lg:px-0 lg:grid-cols-2">
         {stack.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={
-              index % 2 === 0
-                ? { delay: 0.3, duration: 0.3 }
-                : { delay: 0.5, duration: 0.3 }
-            }
-            onMouseEnter={() => handleHover(index)}
-            onMouseLeave={() => handleLeave(index)}
-            className="w-full flex items-center justify-between gap-4 text-white bg-[#121212] p-4 rounded-xl hover:bg-[#19191A] cursor-pointer"
-          >
-            <div className="flex items-center gap-4">
-              <div className="p-2 gap-2 bg-[#19191A] rounded-md">
-                <Image
-                  className="h-[40px] w-[40px] object-cover rounded-md"
-                  src={item.icon}
-                  alt="logo"
-                  width={40}
-                  height={40}
-                />
-              </div>
-              <div>
-                <h1 className="text-xl font-SpaceGrotesk font-semibold">
-                  {item.name}
-                </h1>
-                <p className="text-lg font-SpaceGrotesk font-medium text-white/75">
-                  {item.type}
-                </p>
-              </div>
-            </div>
+          <Link href={item.link} key={index} target="_blank">
             <motion.div
-              className="flex p-4"
-              initial={{ x: 20, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.3 }}
+              onMouseEnter={() => handleHover(index)}
+              onMouseLeave={() => handleLeave(index)}
+              className="w-full flex items-center justify-between gap-4 text-white bg-[#121212] p-4 rounded-xl hover:bg-[#19191A] cursor-pointer"
             >
+              <div className="flex items-center gap-4">
+                <div className="p-2 gap-2 bg-[#19191A] rounded-md">
+                  <Image
+                    className="h-[40px] w-[40px] object-contain rounded-md"
+                    src={item.icon}
+                    alt="logo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                <div>
+                  <h1 className="text-xl font-SpaceGrotesk font-semibold">
+                    {item.name}
+                  </h1>
+                  <p className="text-lg font-SpaceGrotesk font-medium text-white/75">
+                    {item.type}
+                  </p>
+                </div>
+              </div>
               <motion.div
-                initial={{ rotate: 0 }}
-                animate={hovered[index] ? { rotate: -45 } : { rotate: 0 }}
+                className="flex p-4"
+                initial={{ x: 20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.6 }}
               >
-                <ArrowRight color={`${hovered[index] ? "white" : "gray"}`} />
+                <motion.div
+                  initial={{ rotate: 0 }}
+                  animate={hovered[index] ? { rotate: -45 } : { rotate: 0 }}
+                >
+                  <ArrowRight color={`${hovered[index] ? "white" : "gray"}`} />
+                </motion.div>
               </motion.div>
             </motion.div>
-          </motion.div>
+          </Link>
         ))}
       </div>
     </div>

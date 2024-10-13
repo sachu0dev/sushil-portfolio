@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -63,12 +64,20 @@ const page = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
           >
             <span className="text-xs">SAY HELLO</span>
-            <div className="p-2 rounded-full bg-[#171717]">
+            <Link
+              href="https://x.com/sachu0dev"
+              target="_blank"
+              className="p-2 rounded-full bg-[#171717]"
+            >
               <Twitter size={16} />
-            </div>
-            <div className="p-2 rounded-full bg-[#171717]">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/sachu0dev/"
+              target="_blank"
+              className="p-2 rounded-full bg-[#171717]"
+            >
               <Linkedin size={16} />
-            </div>
+            </Link>
           </motion.div>
           {/* contect me */}
           <motion.div
