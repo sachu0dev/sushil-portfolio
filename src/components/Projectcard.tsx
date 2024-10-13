@@ -162,7 +162,7 @@ const Projectcard = () => {
 
                 <div className="flex space-x-8">
                   <div className="flex-1">
-                    <h1 className="text-5xl font-DegularBold">35%</h1>
+                    <h1 className="text-5xl  font-DegularBold">35%</h1>
 
                     <p className="text-white/60 text-lg">
                       Developed a full-stack blog platform with React,

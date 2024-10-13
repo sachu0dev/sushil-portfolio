@@ -7,68 +7,44 @@ import Link from "next/link";
 
 const stack = [
   {
-    name: "React.js",
-    icon: "/icons/react.svg",
-    type: "User Interface Library",
-    link: "https://react.dev/",
+    name: "Docker",
+    icon: "/icons/docker.svg",
+    type: "Containerization platform",
+    link: "https://www.docker.com/",
   },
   {
-    name: "Node.js",
-    icon: "/icons/nodejs.svg",
-    type: "Javascript runtime",
-    link: "https://nodejs.org/en",
+    name: "Cloudflare Worker",
+    icon: "/icons/cloudflare.svg",
+    type: "Serverless framework",
+    link: "https://www.cloudflare.com/",
   },
   {
-    name: "Next.js",
-    icon: "/icons/nextjs.svg",
-    type: "Fullstack framework",
-    link: "https://nextjs.org/",
+    name: "Git",
+    icon: "/icons/git.svg",
+    type: "Version control system",
+    link: "https://git-scm.com/",
   },
   {
-    name: "Typescript",
-    icon: "/icons/typescript.svg",
-    type: "Type annotations for JavaScript",
-    link: "https://www.typescriptlang.org/",
+    name: "Postman",
+    icon: "/icons/postman.svg",
+    type: "Api testing tool",
+    link: "https://www.postman.com/",
   },
   {
-    name: "MongooDB",
-    icon: "/icons/mongodb.svg",
-    type: "NoSQL database",
-    link: "https://www.mongodb.com/",
+    name: "Github",
+    icon: "/icons/github.svg",
+    type: "Code hosting platform",
+    link: "https://github.com/",
   },
   {
-    name: "PostgreSQL",
-    icon: "/icons/postgresql.svg",
-    type: "SQL database",
-    link: "https://www.postgresql.org/",
-  },
-  {
-    name: "Redux",
-    icon: "/icons/redux.svg",
-    type: "Fullstack framework",
-    link: "https://redux.js.org/",
-  },
-  {
-    name: "Redis",
-    icon: "/icons/Redis.png",
-    type: "database and cache",
-    link: "https://redis.io/",
-  },
-  {
-    name: "Socket.io",
-    icon: "/icons/socket.svg",
-    type: "Real-time communication",
-    link: "https://socket.io/",
-  },
-  {
-    name: "NPM",
-    icon: "/icons/npm.svg",
-    type: "Package manager",
-    link: "https://www.npmjs.com/",
+    name: "Notion",
+    icon: "/icons/notion.svg",
+    type: "Document management platform",
+    link: "https://www.notion.so",
   },
 ];
 
-const MyStack = () => {
+const MyTools = () => {
   // Explicitly type the hovered state
   const [hovered, setHovered] = React.useState<{ [key: number]: boolean }>({});
 
@@ -89,7 +65,7 @@ const MyStack = () => {
         transition={{ delay: 0.3, duration: 0.4 }}
       >
         <h1 className="text-4xl font-KGBlankSpaceSketch text-white justify-start mb-2">
-          My Stack
+          My Tools
         </h1>
         <p className="text-lg font-medium text-white/80 justify-start font-PPNeueMontrealBook">
           Dedicated to keeping up-to-date with the latest web development
@@ -148,4 +124,4 @@ const MyStack = () => {
   );
 };
 
-export default MyStack;
+export default MyTools;

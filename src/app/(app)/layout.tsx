@@ -2,6 +2,7 @@
 import AnimatedBackGround from "@/components/AnimatedBackground";
 import HomeAbout from "@/components/HomeAbout";
 import MyStack from "@/components/MyStack";
+import MyTools from "@/components/MyTools";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import { motion } from "framer-motion";
@@ -35,7 +36,7 @@ export default function RootLayout({
       </div>
       <motion.section
         className={
-          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-32 2xl:px-52 py-32"
+          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-40 2xl:px-64 py-32"
         }
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -52,10 +53,17 @@ export default function RootLayout({
       </section>
       <section
         className={
-          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-32 2xl:px-64 py-32"
+          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-32 2xl:px-64 py-32 mb-12"
         }
       >
         <MyStack />
+      </section>
+      <section
+        className={
+          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-32 2xl:px-64 pb-32"
+        }
+      >
+        <MyTools />
       </section>
     </main>
   );
