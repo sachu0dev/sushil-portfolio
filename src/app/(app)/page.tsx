@@ -25,7 +25,7 @@ const page = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              <Smile className=" text-[50px] sm:text-[60px]" color="#FFD700" />
+              <Smile size={60} color="#FFD700" />
             </motion.div>
           </div>
           <div className="flex relative mb-10 md:mb-0 space-x-4 sm:space-x-10 transform items-center">
