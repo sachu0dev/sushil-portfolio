@@ -8,16 +8,16 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="relative h-full z-20 flex flex-col  items-center text-white">
+    <div className="relative z-20 flex flex-col  items-center text-white">
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.3 }}
         className="flex flex-col h-full"
       >
-        <div className="flex flex-col mb-10 xl:mb-0 justify-center items-center ">
-          <div className="flex space-x-4 sm:space-x-10  items-center md:pr-16 xl:pr-32  sm:mb-2 xl:mb-14">
-            <h1 className="text-3xl text-center md:text-6xl xl:text-8xl font-KGBlankSpaceSketch">
+        <div className="flex flex-col md:mb-10 xl:mb-0 justify-center items-center ">
+          <div className="flex space-x-4 md:space-x-10  items-center md:pr-16 xl:pr-32  md:mb-2 xl:mb-14">
+            <h1 className=" text-3xl sm:text-4xl text-center md:text-6xl xl:text-8xl font-KGBlankSpaceSketch">
               SUSHIL KUMAR
             </h1>
             <motion.div
@@ -36,7 +36,7 @@ const page = () => {
             >
               <CodeXml strokeWidth={1} size={80} className="text-white/60" />
             </motion.div>
-            <h1 className="text-3xl md:text-6xl xl:text-8xl font-KGBlankSpaceSketch">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-8xl font-KGBlankSpaceSketch">
               FULLSTACK DEV
             </h1>
             <motion.div
@@ -84,14 +84,14 @@ const page = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.3 }}
-            className="flex sm:space-x-12 items-center flex-row-reverse"
+            className="flex sm:space-x-12 items-center flex-col-reverse  sm:flex-row-reverse"
           >
             <Link href="mailto:sushil.dev.in@gmail.com" target="_blank">
-              <Button className=" text-xs sm:text-lg md:text-xl p-2 mx-8 sm:p-6 md:p-8 hover:bg-gray-300 bg-white text-black font-extrabold">
+              <Button className="text-xs sm:text-lg md:text-xl p-2 mx-8 sm:p-6 md:p-8 hover:bg-gray-300 bg-white text-black font-extrabold">
                 Contect Me
               </Button>
             </Link>
-            <p className=" text-xs sm:text-xl sm:w-[500px] mb-3 md:mb-0 pl-8 sm:px-8 text-wrap text-left font-roboto ">
+            <p className=" text-sm md:text-xl md:w-[500px] mb-3 md:mb-0 pl-8 sm:px-8 text-wrap text-left font-roboto ">
               Hello, I&apos;m Sushil Kumar, a full-stack developer from India,
               proficient in MERN and Next.js, with expertise in crafting
               efficient APIs and beautiful websites, leveraging SQL and NoSQL
