@@ -21,7 +21,7 @@ export function ProjectsV2() {
             <div className="flex justify-between w-full">
               <div className="text-neutral-800 w-full dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
                 <div className="flex justify-between">
-                  <h3 className="text-2xl font-semibold mb-2">
+                  <h3 className="text-2xl font-semibold mb-2 text-start">
                     PGConnect: A Saas Paltform for Booking Pgs
                   </h3>
                   <div className="flex space-x-2 h-full">
@@ -96,7 +96,7 @@ export function ProjectsV2() {
             <div className="flex justify-between w-full">
               <div className="text-neutral-800 w-full dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
                 <div className="flex justify-between">
-                  <h3 className="text-2xl font-semibold mb-2">
+                  <h3 className="text-2xl font-semibold mb-2 text-start">
                     Nameless Feedback: Anonymous Feedback App
                   </h3>
                   <div className="flex space-x-2 h-full">
@@ -171,7 +171,7 @@ export function ProjectsV2() {
             <div className="flex justify-between w-full">
               <div className="text-neutral-800 w-full dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 ">
                 <div className="flex justify-between">
-                  <h3 className="text-2xl font-semibold mb-2">
+                  <h3 className="text-2xl font-semibold mb-2 text-start">
                     Kabutar: Real-Time Chat Application
                   </h3>
                   <div className="flex space-x-2 h-full">
@@ -247,7 +247,7 @@ export function ProjectsV2() {
             <div className="flex justify-between w-full">
               <div className="text-neutral-800 w-full dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 ">
                 <div className="flex justify-between">
-                  <h3 className="text-2xl font-semibold mb-2">
+                  <h3 className="text-2xl font-semibold mb-2 text-start">
                     Typing Panda: Vanila Fullstack Typing app
                   </h3>
                   <div className="flex space-x-2 h-full">
