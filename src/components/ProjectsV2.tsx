@@ -26,14 +26,14 @@ export function ProjectsV2() {
                   </h3>
                   <div className="flex space-x-2 h-full">
                     <Link
-                      href={"https://nameless.devbysushil.com"}
+                      href={"https://pgconnect.site"}
                       target="_blank"
                       className="bg-black p-2 right-4  text-white rounded-full"
                     >
                       <Radio size={16} />
                     </Link>
                     <Link
-                      href={"https://github.com/sachu0dev/nameless-feedback"}
+                      href={"https://github.com/sachu0dev/PGConnect"}
                       target="_blank"
                       className="bg-black p-2  text-white rounded-full"
                     >
