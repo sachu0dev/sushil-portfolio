@@ -27,7 +27,10 @@ const grotesk = Grotesk({
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Sushil kumar portfolio",
+  description: "Sushil Kumar portfolio",
+  icons: {
+    icon: "/assets/logo.png",
+  },
 };
 
 export default function RootLayout({
