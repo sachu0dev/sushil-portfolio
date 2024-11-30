@@ -1,9 +1,11 @@
 "use client";
+import Footer from "@/components/Footer";
 import HomeAbout from "@/components/HomeAbout";
 import MyStack from "@/components/MyStack";
 import MyTools from "@/components/MyTools";
 import Navbar from "@/components/Navbar";
-import Projects from "@/components/Projects";
+// import Projects from "@/components/Projects";
+import { ProjectsV2 } from "@/components/ProjectsV2";
 import FlickeringGrid from "@/components/ui/flickering-grid";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
@@ -43,14 +45,13 @@ export default function RootLayout({
         <section>{children}</section>
       </div>
       <motion.section
-        className={
-          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-40 2xl:px-64 py-8 md:py-16"
-        }
+        className={"h-full z-20 flex flex-col px-4   xl:px-32 py-8 xl:py-16"}
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
       >
-        <Projects />
+        {/* <Projects /> */}
+        <ProjectsV2 />
       </motion.section>
       <section
         className={
@@ -72,6 +73,13 @@ export default function RootLayout({
         }
       >
         <MyTools />
+      </section>
+      <section
+        className={
+          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-32 2xl:px-64 pb-8 bg-[#0C0C0D] border-t-[1px] border-white/5"
+        }
+      >
+        <Footer />
       </section>
     </main>
   );

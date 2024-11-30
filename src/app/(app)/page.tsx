@@ -91,7 +91,7 @@ const page = () => {
                 Contect Me
               </Button>
             </Link>
-            <p className=" text-sm md:text-xl md:w-[500px] mb-3 md:mb-0 pl-8 sm:px-8 text-wrap text-left font-roboto ">
+            <p className=" text-sm md:text-xl mx-4 md:w-[500px] mb-3 md:mb-0 pl-8 sm:px-8 text-wrap text-left font-roboto ">
               Hello, I&apos;m Sushil Kumar, a full-stack developer from India,
               proficient in MERN and Next.js, with expertise in crafting
               efficient APIs and beautiful websites, leveraging SQL and NoSQL
