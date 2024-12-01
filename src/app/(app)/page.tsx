@@ -88,7 +88,7 @@ const page = () => {
           >
             <Link href="mailto:sushil.dev.in@gmail.com" target="_blank">
               <Button className="text-xs sm:text-lg md:text-xl p-2 mx-8 sm:p-6 md:p-8 hover:bg-gray-300 bg-white text-black font-extrabold">
-                Contect Me
+                Contact Me
               </Button>
             </Link>
             <p className=" text-sm md:text-xl mx-4 md:w-[500px] mb-3 md:mb-0 pl-8 sm:px-8 text-wrap text-left font-roboto ">
