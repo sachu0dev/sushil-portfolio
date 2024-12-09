@@ -4,6 +4,7 @@ import HomeAbout from "@/components/HomeAbout";
 import MyStack from "@/components/MyStack";
 import MyTools from "@/components/MyTools";
 import Navbar from "@/components/Navbar";
+import { OtherProjects } from "@/components/OtherProjects";
 // import Projects from "@/components/Projects";
 import { ProjectsV2 } from "@/components/ProjectsV2";
 import FlickeringGrid from "@/components/ui/flickering-grid";
@@ -73,6 +74,13 @@ export default function RootLayout({
         }
       >
         <MyTools />
+      </section>
+      <section
+        className={
+          "h-full z-20 flex flex-col px-8 sm:px-16 md:px-32 2xl:px-64 py-32"
+        }
+      >
+        <OtherProjects />
       </section>
       <section
         className={

@@ -72,17 +72,6 @@ const Navbar = () => {
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              <Link href="/about">
-                <div className="cursor-pointer w-full h-[70px] flex justify-start items-center  border-b-[1px] px-8 border-white/10">
-                  <motion.span
-                    whileHover={{ x: 20 }}
-                    transition={{ duration: 0.3 }}
-                    className="text-left w-full "
-                  >
-                    ABOUT
-                  </motion.span>
-                </div>
-              </Link>
               <Link href="mailto:sushil.dev.in@gmail.com">
                 <div className="cursor-pointer w-full h-[70px] flex justify-start items-center  border-b-[1px] px-8 border-white/10">
                   <motion.span
@@ -124,27 +113,6 @@ const Navbar = () => {
           />
         </Link>
         <ul className="flex space-x-10 2xl:space-x-20 font-sans font-bold text-xs h-full">
-          <Link href="/about">
-            <motion.li
-              initial={{ y: 0, opacity: 1 }}
-              whileHover={{ y: 20, opacity: 1, transition: { delay: 0.1 } }}
-              onMouseEnter={() => handleHover("about")}
-              onMouseLeave={() => handleLeave("about")}
-              className="p-4 cursor-pointer flex space-x-16 items-center h-full"
-            >
-              <span>ABOUT</span>{" "}
-              <motion.div
-                initial={{ rotate: 0, opacity: 0 }}
-                animate={
-                  isHovered.about
-                    ? { rotate: -45, opacity: 1 }
-                    : { rotate: 0, opacity: 0 }
-                }
-              >
-                <MoveRight size={16} />
-              </motion.div>
-            </motion.li>
-          </Link>
           <Link href={"mailto:sushil.dev.in@gmail.com"}>
             <motion.li
               initial={{ y: 0, opacity: 1 }}
