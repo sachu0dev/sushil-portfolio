@@ -15,7 +15,7 @@ export function ProjectsV2() {
           transition={{ duration: 0.3 }}
         >
           <ProjectCard
-            title="PGConnect: A SaaS Platform for Booking PGs"
+            title="PGConnect: A Platform for Booking PGs"
             href="https://pgconnect.site"
             description="Developed a SaaS platform that connects users seeking PG accommodations with PG owners. The platform integrates Google Maps API to provide precise address details, ensuring seamless connections between users and PG owners."
             dates="2023"

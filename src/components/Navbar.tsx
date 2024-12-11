@@ -85,7 +85,7 @@ const Navbar = () => {
               </Link>
               <Link
                 target="_blank"
-                href="https://drive.google.com/file/d/1yOwydSbpM2dZUPPyPnZ-ynlQaGN6DRpf/view?usp=sharing"
+                href="https://drive.google.com/file/d/1_kqYDi_LY7-QJ1_LRK5hi4Ymy-JKMZg2/view?usp=sharing"
               >
                 <div className="cursor-pointer w-full h-[70px] flex justify-start items-center   px-8">
                   <motion.span
@@ -137,7 +137,7 @@ const Navbar = () => {
           <Link
             target="_blank"
             href={
-              "https://drive.google.com/file/d/1yOwydSbpM2dZUPPyPnZ-ynlQaGN6DRpf/view?usp=sharing"
+              "https://drive.google.com/file/d/1_kqYDi_LY7-QJ1_LRK5hi4Ymy-JKMZg2/view?usp=sharing"
             }
           >
             <motion.li
