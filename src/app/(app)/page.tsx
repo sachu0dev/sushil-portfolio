@@ -1,5 +1,5 @@
 "use client";
-import { CodeXml, Linkedin, Smile, Twitter } from "lucide-react";
+import { CodeXml, Github, Linkedin, Smile, Twitter } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
@@ -64,6 +64,13 @@ const page = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
           >
             <span className="text-xs">SAY HELLO</span>
+            <Link
+              href="https://github.com/sachu0dev"
+              target="_blank"
+              className="p-2 rounded-full bg-[#171717]"
+            >
+              <Github size={16} />
+            </Link>
             <Link
               href="https://x.com/sachu0dev"
               target="_blank"
