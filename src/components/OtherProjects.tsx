@@ -32,10 +32,10 @@ export const projects = [
     link: "https://medium-kappa-six.vercel.app",
   },
   {
-    title: "Pay Vault",
+    title: "The Incredible India",
     description:
-      "A simple wallet application built with React and Express, showcasing dynamic user interfaces, state management, and responsive design.",
-    link: "https://github.com/sachu0dev/PayVault",
+      "Discover the beauty of India through an immersive experience. Built with Next.js, Locomotive Scroll, and GSAP, this website showcases India’s iconic destinations with smooth scrolling and engaging animations. Explore the rich culture, heritage, and stunning landscapes of India like never before.",
+    link: "http://theincredibleindia.devbysushil.com",
   },
   {
     title: "PC Parts",
