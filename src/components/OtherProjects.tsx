@@ -16,37 +16,37 @@ export const projects = [
   {
     title: "Typing Panda",
     description:
-      "Typing Panda: Interactive game to enhance typing skills with customizable features for all skill levels.",
+      "Developed a full-stack typing practice platform with Node.js and Express.js, featuring dual modes and real-time leaderboards. Enhanced security with JWT and Zod, improved user experience, and integrated Chart.js for progress tracking, increasing typing speed by 40%.",
     link: "https://typingpanda.netlify.app",
   },
   {
-    title: "Netflix",
+    title: "Masalamandi",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Integrated Swiggy API with a proxy backend for seamless browsing of 1000+ restaurants. Built a Redux Toolkit cart system, boosting engagement by 40%. Optimized load time by 30%.",
+    link: "https://masalamandi.vercel.app/",
   },
   {
-    title: "Google",
+    title: "Inspiration Blog Website",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Built a full-stack blog platform with React, TypeScript, and Cloudflare Workers, improving load speed by 40%. Enhanced engagement by 25% with secure authentication and optimized PostgreSQL, cutting query times by 50%.",
+    link: "https://medium-kappa-six.vercel.app",
   },
   {
-    title: "Meta",
+    title: "Pay Vault",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "A simple wallet application built with React and Express, showcasing dynamic user interfaces, state management, and responsive design.",
+    link: "https://github.com/sachu0dev/PayVault",
   },
   {
-    title: "Amazon",
+    title: "PC Parts",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Created a static website for PC parts using HTML, CSS, and JavaScript, featuring a responsive design and visually appealing layout. Showcased static data to highlight frontend development skills and user-friendly interfaces.",
+    link: "https://pc-parts-in.netlify.app",
   },
   {
-    title: "Microsoft",
+    title: "Mini Projects",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Discover 20+ beginner-friendly mini projects designed to build your coding skills and spark your passion for programming. Enjoy hands-on experiences that make learning fun and accessible for everyone.",
+    link: "https://sushil-miniprojects.netlify.app",
   },
 ];
