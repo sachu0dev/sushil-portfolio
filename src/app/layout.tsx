@@ -26,7 +26,7 @@ const grotesk = Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Sushil Kumar",
   description: "Sushil Kumar portfolio",
 };
 
