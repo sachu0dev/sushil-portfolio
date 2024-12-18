@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     google: "YOUR_GOOGLE_SITE_VERIFICATION_CODE",
   },
   alternates: {
-    canonical: "https://devbysushil.com",
+    canonical: "https://www.devbysushil.com",
   },
 };
 
