@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 import { Space_Grotesk as Grotesk } from "next/font/google";
 import "./globals.css";
-// import { GoogleTag } from "@/components/ui/GoogleTag";
+import { GoogleTag } from "@/components/ui/GoogleTag";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -95,7 +95,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>{/* <GoogleTag /> */}</head>
+      <head>{<GoogleTag />}</head>
       <body
         className={`bg-[#0C0C0D] ${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${grotesk.variable} antialiased`}
       >
