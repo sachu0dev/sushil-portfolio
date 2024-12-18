@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 import { Space_Grotesk as Grotesk } from "next/font/google";
 import "./globals.css";
-import { GoogleTag } from "@/components/ui/GoogleTag";
+// import { GoogleTag } from "@/components/ui/GoogleTag";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,7 +30,7 @@ const grotesk = Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devbysushil.com"),
+  metadataBase: new URL("https://www.devbysushil.com"),
   title: {
     default: "Sushil Kumar - Full Stack Web Developer",
     template: "%s | Sushil Kumar's Portfolio",
@@ -52,12 +52,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sushil Kumar - Full Stack Web Developer",
     description: "Explore innovative web solutions and professional expertise",
-    url: "https://devbysushil.com",
+    url: "https://www.devbysushil.com",
     siteName: "Sushil Kumar Portfolio",
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
       },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sushil Kumar - Web Development Portfolio",
     description: "Innovative web solutions by a full-stack developer",
-    images: ["/twitter-image.png"],
+    images: ["/images/logo.png"],
   },
   robots: {
     index: true,
@@ -95,9 +95,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <GoogleTag />
-      </head>
+      <head>{/* <GoogleTag /> */}</head>
       <body
         className={`bg-[#0C0C0D] ${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${grotesk.variable} antialiased`}
       >
